@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ListRoute } from './@types/components/App/routes.types';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { theme } from './assets/theme/theme';
+import { ThemeProvider } from '@mui/material';
+import { navList } from './Routes';
 
 function App() {
+  const GetRoutes = (AllRoute: ListRoute[]): any => (
+    <React.Fragment>
+      {AllRoute.map((route) => {
+        if (route.path) {
+          return (
+            <Route key={route.key} path={route.path} element={<>{route.component}</>} />
+          )
+        }
+        return null
+      })}
+    </React.Fragment>
+  )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme} >
+      <BrowserRouter>
+        <>
+          <>
+            <Routes>
+              {GetRoutes(navList)}
+            </Routes>
+          </>
+        </>
+
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
