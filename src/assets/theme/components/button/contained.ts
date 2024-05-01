@@ -65,28 +65,8 @@ const contained = {
     },
   },
 
-  secondary: {
-    backgroundColor: 'secondary',
-    color: 'white',
-    "&:hover": {
-      backgroundColor: 'secondary.dark',
-    },
 
-    "&:focus:not(:hover)": {
-      backgroundColor: 'secondary',
-    },
-  },
-  gradients: {
-    background: 'linear-gradient(60deg, #F48665 0%, #FDA23F 0%)',
-    color: 'white',
-    "&:hover": {
-      backgroundColor: 'secondary.dark',
-    },
 
-    "&:focus:not(:hover)": {
-      backgroundColor: 'secondary',
-    },
-  }
 };
 
 export default contained;

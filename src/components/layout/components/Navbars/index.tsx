@@ -427,7 +427,6 @@ function Navbars() {
                 }}
                 variant="temporary"
                 anchor="left"
-                open={isOpen}
             >
 
                 <List>
