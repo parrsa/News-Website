@@ -1,7 +1,6 @@
 import { ComponentsOverrides, ComponentsProps, ComponentsVariants, Theme, } from "@mui/material";
 import pxToRem from "../functions/pxToRem";
 
-/* This code snippet is defining typography styles for a project using Material-UI in TypeScript. */
 const baseProperties = {
     fontFamily: 'iranSans',
     fontWeightLighter: 100,

@@ -1,144 +1,185 @@
+
+
+
 declare module '@mui/material/styles' {
-
-    /* The `interface Palette` is defining a structure that represents a color palette in a TypeScript
-    React application. It includes various color options such as primary, third, gradients, info,
-    success, warning, error, secondary, gray, transparent, dark, and white. Each color option is
-    defined using the `SimplePaletteColorOptions` or `PaletteColorOptions` interfaces, specifying
-    different properties like main color, state, focus, light, dark, and other custom properties for
-    each color in the palette. This structure helps in organizing and managing the colors used in the
-    application's design system. */
-    interface Palette {
-        primary: SimplePaletteColorOptions;
-        third: SimplePaletteColorOptions;
-        gradients: SimplePaletteColorOptions;
-        info: SimplePaletteColorOptions;
-        success: SimplePaletteColorOptions;
-        warning: SimplePaletteColorOptions;
-        error: SimplePaletteColorOptions;
-        secondary: SimplePaletteColorOptions;
-        gray: SimplePaletteColorOptions;
-        transparent: PaletteColorOptions;
-        dark: PaletteColorOptions;
-        white: PaletteColorOptions;
-    }
-
-    /* The `interface PaletteOptions` is defining a structure that represents the color options available
-    for the color palette in a TypeScript React application. Each property in this interface corresponds
-    to a specific color option such as primary, third, gradients, info, success, warning, error,
-    secondary, gray, transparent, dark, and white. */
     interface PaletteOptions {
-        primary: PaletteColorOptions;
-        third: PaletteColorOptions;
-        gradients: PaletteColorOptions;
-        info: PaletteColorOptions;
-        success: PaletteColorOptions;
-        warning: PaletteColorOptions;
-        error: PaletteColorOptions;
-        secondary: PaletteColorOptions;
-        gray: PaletteColorOptions;
-        transparent: PaletteColorOptions;
-        dark: PaletteColorOptions;
-        white: PaletteColorOptions;
+        socialMedias: socialColors
+        gradients: gradientsColors
+        red: SimplePaletteColorOptions
+        pink: SimplePaletteColorOptions
+        purple: SimplePaletteColorOptions
+        deepPurple: SimplePaletteColorOptions
+        indigo: SimplePaletteColorOptions
+        blue: SimplePaletteColorOptions
+        lightBlue: SimplePaletteColorOptions
+        cyan: SimplePaletteColorOptions
+        teal: SimplePaletteColorOptions
+        green: SimplePaletteColorOptions
+        lightGreen: SimplePaletteColorOptions
+        lime: SimplePaletteColorOptions
+        yellow: SimplePaletteColorOptions
+        amber: SimplePaletteColorOptions
+        orange: SimplePaletteColorOptions
+        deepOrange: SimplePaletteColorOptions
+        brown: SimplePaletteColorOptions
+        blueGrey: SimplePaletteColorOptions
+        badgeColors: BadgeColors
+        white: PaletteColorOptions
+        transparent: PaletteColorOptions
+        light: PaletteColorOptions
+        black: PaletteColorOptions
+        dark: PaletteColorOptions
+        inputBorderColor: PaletteColorOptions
+        coloredShadows: PaletteColorOptions
+        tabs: PaletteColor
+        kaarnas: Palettekaarnas
     }
 
-    /* The `interface PaletteColorOptions` is defining a structure that represents the options available
-    for a color in a color palette within a TypeScript React application. It includes properties such
-    as `main`, `state`, `focus`, `light`, `dark`, `primary`, `secondary`, `tertiary`, `Quaternary`,
-    `border`, `lite`, `gradiant1`, and `gradiant2`, each with a corresponding type of `string` or
-    `undefined`. */
-    interface PaletteColorOptions {
-        main: string;
-        state?: string;
-        focus?: string;
-        light?: string;
-        dark?: string;
-        primary?: string;
-        secondary?: string;
-        tertiary?: string;
-        Quaternary?: string;
-        border?: string;
-        lite?: string;
-        gradiant1?: string;
-        gradiant2?: string;
+    interface Palettekaarnas {
+        main: string,
+        yellow: string
+        ratingyellow: string
+        graybox: string
     }
+    // SocialColors
 
-    /* The `interface socialColors` is defining a structure that represents a collection of social
-    colors in a TypeScript React application. It uses an index signature `[key: string]:
-    socialColorOptions` to allow for dynamic properties where the key is a string and the value is of
-    type `socialColorOptions`. This structure enables the application to store and access various
-    social colors with different properties such as `main` and optionally `dark`. It provides a
-    flexible way to define and manage social colors within the design system of the application. */
     interface socialColors {
-        [key: string]: socialColorOptions;
+        facebook: socialColorOptions
+        twitter: socialColorOptions
+        instagram: socialColorOptions
+        linkedin: socialColorOptions
+        pinterest: socialColorOptions
+        youtube: socialColorOptions
+        vimeo: socialColorOptions
+        slack: socialColorOptions
+        dribbble: socialColorOptions
+        github: socialColorOptions
+        reddit: socialColorOptions
+        tumblr: socialColorOptions
+        GooglePlus: socialColorOptions
+        Steam: socialColorOptions
+        Soundcloud: socialColorOptions
+        Yahoo: socialColorOptions
+        Amazon: socialColorOptions
+        Spotify: socialColorOptions
+        Discord: socialColorOptions
+        Twitch: socialColorOptions
+        WhatsApp: socialColorOptions
+        Snapchat: socialColorOptions
+        Pinterest: socialColorOptions
+        TikTok: socialColorOptions
+        Skype: socialColorOptions
+
     }
 
-    /* The `interface socialColorOptions` is defining a structure that represents a social color option
-    in a TypeScript React application. It has two properties: */
     interface socialColorOptions {
-        main: string;
-        dark?: string;
+        main: string
+        dark?: string
     }
 
-    /* The `interface gradientsColors` is defining a structure that represents a collection of gradient
-    colors in a TypeScript React application. It uses an index signature `[key: string]:
-    gradientsColorsOptions` to allow for dynamic properties where the key is a string and the value
-    is of type `gradientsColorsOptions`. This structure enables the application to store and access
-    various gradient colors with different properties such as `main`, `state`, `state1`, `light`, and
-    `dark`. It provides a flexible way to define and manage gradient colors within the design system
-    of the application. */
+
+    // GradientsColors
+
     interface gradientsColors {
-        [key: string]: gradientsColorsOptions;
+        primary: gradientsColorsOptions
+        secondary: gradientsColorsOptions
+        info: gradientsColorsOptions
+        success: gradientsColorsOptions
+        warning: gradientsColorsOptions
+        error: gradientsColorsOptions
+        light: gradientsColorsOptions
+        dark: gradientsColorsOptions
+        Grade_Grey: gradientsColorsOptions
+        Piggy_Pink: gradientsColorsOptions
+        Cool_Blues: gradientsColorsOptions
+        Mega_Tron: gradientsColorsOptions
+        Moonlit_Asteroid: gradientsColorsOptions
+
     }
 
-    /* The `interface gradientsColorsOptions` is defining a structure that represents the options
-    available for a gradient color in a color palette within a TypeScript React application. It
-    includes the following properties: */
+
     interface gradientsColorsOptions {
-        main: string;
-        state: string;
-        state1?: string;
-        light?: string;
-        dark?: string;
+        main: string
+        state: string
+        state1?: string
     }
 
-    /* The `interface SimplePaletteColorOptions` is defining a structure that represents a simple color
-    option in a color palette within a TypeScript React application. It has a required property `main`
-    which specifies the main color value as a string. Additionally, it allows for dynamic properties
-    using an index signature `[key: string]: string | undefined;`, where any additional properties can
-    be added with keys as strings and values as either strings or undefined. This provides flexibility
-    to include extra color-related properties if needed while ensuring type safety within the color
-    options. */
+    interface PaletteColorOptions {
+        main: string
+        state?: string
+        focus?: string
+        light?: string
+        dark?: string
+        primary?: string
+        secondary?: string
+        tertiary?: string
+        Quaternary?: string
+    }
+
+
+    // SimpleColors
     interface SimplePaletteColorOptions {
-        main: string;
-        [key: string]: string | undefined;
+        main: string
+        50?: string
+        100?: string
+        200?: string
+        300?: string
+        400?: string
+        500?: string
+        600?: string
+        700?: string
+        800?: string
+        900?: string
+        A100?: string
+        A200?: string
+        A300?: string
+        A400?: string
+        A700?: string
+        fucos?: string;
     }
 
-    /* The `interface BadgeColors` is defining a structure that represents a collection of badge colors in
-    a TypeScript React application. It uses an index signature `[key: string]: BadgeColorsOptions` to
-    allow for dynamic properties where the key is a string and the value is of type
-    `BadgeColorsOptions`. This structure enables the application to store and access various badge
-    colors with different properties such as `background` and `text`. It provides a flexible way to
-    define and manage badge colors within the design system of the application. */
+    //BadgeColors
     interface BadgeColors {
-        [key: string]: BadgeColorsOptions;
+        primary: BadgeColorsOptions
+        secondary: BadgeColorsOptions
+        info: BadgeColorsOptions
+        success: BadgeColorsOptions
+        warning: BadgeColorsOptions
+        error: BadgeColorsOptions
+        light: BadgeColorsOptions
+        dark: BadgeColorsOptions
     }
 
-    /* The `interface BadgeColorsOptions` is defining a structure that represents the options available for
-    a badge color in a TypeScript React application. It has two properties: */
     interface BadgeColorsOptions {
-        background: string;
-        text: string;
+        background: string
+        text: string
     }
 
-    /* The `interface PaletteColor` is defining a structure that represents a specific color option called
-    `indicator` within a color palette in a TypeScript React application. This `indicator` color option
-    is defined using the `PaletteColorOptions` interface, which specifies various properties such as
-    `main`, `state`, `focus`, `light`, `dark`, `primary`, `secondary`, `tertiary`, `Quaternary`,
-    `border`, `lite`, `gradiant1`, and `gradiant2`. By including this interface, it allows for
-    organizing and managing the `indicator` color within the overall color palette structure, providing
-    a consistent way to access and utilize this particular color option throughout the application's
-    design system. */
     interface PaletteColor {
-        indicator: PaletteColorOptions;
+        indicator: PaletteColorOptions
     }
 }
+export interface PageLayoutProps {
+    children?: React.ReactNode;
+};
+
+export interface Listnav {
+    title: string,
+    path: string,
+    id: number,
+    icon?: React.ReactNode
+}
+
+export interface AllRoutes {
+    type: string,
+    name: string,
+    key: string,
+    route: string,
+    component: React.ReactNode
+    children?: any
+}
+
+
+
+
+export { }
