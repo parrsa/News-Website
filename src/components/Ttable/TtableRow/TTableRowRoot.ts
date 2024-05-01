@@ -1,8 +1,7 @@
-import { Button, TableCell, TableRow, Theme, styled, useTheme } from "@mui/material";
+import {  TableRow, Theme, styled, useTheme } from "@mui/material";
 import { ITTableRowOptions } from "../../../@types/components/MuI/TRow";
-import colors from "../../../assets/theme/base/colors";
 const TTableRowRoot = styled(TableRow)<{ ownerState: ITTableRowOptions }>(({ ownerState }) => {
-    const { variant, bgColor, color, root } = ownerState;
+    const { variant, bgColor,  root } = ownerState;
     const theme = useTheme() as Theme;
 
 

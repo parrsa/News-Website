@@ -20,7 +20,7 @@ import TButtonRoot from "./TButtonRoot";
 const TButton = forwardRef<HTMLButtonElement, ITButton>((props, ref) => {
     const { icon, children, color, width, size, iconend } = props;
     return (
-        <TButtonRoot variant="gradient"  {...props} size={size} ownerState={props} ref={ref} startIcon={icon} endIcon={iconend}>
+        <TButtonRoot      {...props} size={size} ownerState={props} ref={ref} startIcon={icon} endIcon={iconend}>
             {children}
         </TButtonRoot>  
     );

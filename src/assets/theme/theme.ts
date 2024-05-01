@@ -6,11 +6,21 @@ codebase. */
 import { ThemeOptions, createTheme } from "@mui/material";
 import colors from "./base/colors";
 import breakpoints from "./base/breakpoints";
+import button from "./components/button";
+import iconButton from "./components/iconButton";
+import Typography from "./base/typography";
+import appBar from "./components/appBar";
+import table from "./components/table";
 
 const themeOptions: ThemeOptions = {
     palette: { ...colors },
     breakpoints: { ...breakpoints },
     components: {
+        MuiButton: { ...button },
+        MuiIconButton: { ...iconButton },
+        MuiTypography: { ...Typography },
+        MuiAppBar: { ...appBar },
+        MuiTable: { ...table },
     },
 }
 

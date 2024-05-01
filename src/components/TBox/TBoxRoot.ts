@@ -1,9 +1,8 @@
-import { Box, Theme, styled, useTheme } from "@mui/material";
+import { Box,  styled,  } from "@mui/material";
 import { ITBoxOptions } from "../../@types/components/MuI/TBox";
 
 const TBoxRoot = styled(Box)<{ ownerState: ITBoxOptions }>(({ ownerState }) => {
-    const { variant, width, fullwidth, fullheight, height, header, color, circle, bgcolor, globalbox, box, modal, borderRadius, position, boxlist, boxgradient } = ownerState;
-    const theme = useTheme() as Theme;
+    const { variant, width, fullwidth, fullheight, height, header,  circle,  globalbox, box, modal, borderRadius, position, boxlist, boxgradient } = ownerState;
 
 
     const BoxListing = () => {

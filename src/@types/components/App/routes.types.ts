@@ -9,7 +9,7 @@ export interface RoutesInterface {
 
 export interface ListRoute {
     text: string;
-    key?:string;
+    key?: string;
     path: string;
     name: string;
     icon?: React.ReactNode;
