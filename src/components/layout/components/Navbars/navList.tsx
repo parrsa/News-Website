@@ -1,19 +1,8 @@
 import { ListRoute } from '../../../../@types/components/App/routes.types'
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import Avatar from '@mui/material/Avatar';
-import Logout from '@mui/icons-material/Logout';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import RestorePageIcon from '@mui/icons-material/RestorePage';
-import HelpIcon from '@mui/icons-material/Help';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import HistoryIcon from '@mui/icons-material/History';
-import Settings from '@mui/icons-material/Settings';
-import AddIcon from '@mui/icons-material/Add';
-import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 const navList: ListRoute[] = [
     {
         text: "Home",
-        path: "/dashboard",
+        path: "/",
         name: "home",
         id: 1
     },

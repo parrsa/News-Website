@@ -1,10 +1,12 @@
 import { ListRoute } from "../@types/components/App/routes.types";
+import MainPage from "../pages/MainPages";
 
 const navList: ListRoute[] = [
     {
         text: "Home",
-        path: "/Home",
+        path: "/",
         name: "home",
+        component:<MainPage/>,
         id: 1
     },
     {

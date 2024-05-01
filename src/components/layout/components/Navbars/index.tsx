@@ -152,15 +152,14 @@ function Navbars() {
         setAnchorElCountry(null);
     }
     return (
-        <AppBar sx={{ bgcolor: '#ffffff00', margin: 0, padding: 0, boxShadow: 2, position: { lg: 'fixed', xs: 'static', md: 'static', sm: 'static' } }}>
+        <AppBar sx={{ bgcolor: '#ffffff00', boxShadow: 2, position: 'static' }}>
             <Toolbar>
-                <Grid item container lg={12} md={12} justifyContent={"space-evenly"}>
+                <Grid p={2} item container lg={12} md={12} justifyContent={"space-evenly"}>
                     <Grid item container lg={1} md={3} sx={{ display: { xs: 'none', md: 'flex' }, opacity: "100%" }}>
                         <Grid item container lg={7} justifyContent={"start"} alignItems={'center'}>
                             <Link to='/'>
                                 <img src={Logo} alt='logo' about='logo for website' />
-
-                                <span>{t('pages.MainPage.s')}</span>
+                                {/* <span>{t('pages.MainPage.s')}</span> */}
                             </Link>
                         </Grid>
                     </Grid>
@@ -369,6 +368,7 @@ function Navbars() {
                                         <MenuList onClick={() => navigate(item.path)}>
                                             <MenuItem
                                                 sx={{
+                                                    fontSize: 20,
                                                     cursor: "pointer",
                                                     color: `${urlSplit(pathname) === urlSplit(item.path) ? colors.kaarnas.yellow : colors.black.main}`
                                                 }}

@@ -32,8 +32,6 @@ const button: {
         containedSizeLarge: { ...contained.large },
         containedPrimary: { ...contained.primary },
         containedSecondary: { ...contained.secondary },
-        containedThird: { ...contained.third },
-        containedGradients: { ...contained.gradients },
         outlined: {...outlined.base},
         outlinedSizeSmall: {...outlined.small},
         outlinedSizeLarge: {...outlined.large},
