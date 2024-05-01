@@ -135,16 +135,18 @@ function Navbars() {
             navigate('/')
         }
     };
-    const handleChangeLng = () => {
-        const CurrentLng = i18n.language;
-        const lng = CurrentLng === 'en' ? 'gr' : 'en';
-        i18n.changeLanguage(lng);
-    }
+
 
     const [anchorElCountry, setAnchorElCountry] = React.useState<null | HTMLElement>(null);
     const openShowCountry = Boolean(anchorElCountry)
     const ShowCountry = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElCountry(event.currentTarget);
+    }
+    const handleChangeLng = () => {
+        const CurrentLng = i18n.language;
+        const lng = CurrentLng === 'en' ? 'gr' : 'en';
+        i18n.changeLanguage(lng);
+        setAnchorElCountry(null);
     }
     const closeShowCountry = () => {
         setAnchorElCountry(null);
