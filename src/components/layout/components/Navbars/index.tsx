@@ -368,7 +368,7 @@ function Navbars() {
                                         <MenuList onClick={() => navigate(item.path)}>
                                             <MenuItem
                                                 sx={{
-                                                    fontSize: 20,
+                                                    fontSize: 16,
                                                     cursor: "pointer",
                                                     color: `${urlSplit(pathname) === urlSplit(item.path) ? colors.kaarnas.yellow : colors.black.main}`
                                                 }}

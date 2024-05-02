@@ -38,7 +38,27 @@
     transform: rotate(360deg);
   }
 } */
-*{
+* {
   margin: 0;
   padding: 0;
+}
+
+.my-carousel {
+  min-width: 100%;
+  min-height: 100%;
+  color: black;
+  border: 1px solid #ccc;
+  background-color: 'red';
+}
+
+.my-carousel div {
+  min-width: 100%;
+  min-height: 100%;
+
+  background-color: 'red';
+}
+
+.my-carousel img {
+  width: 100%;
+  height: fit-content;
 }
