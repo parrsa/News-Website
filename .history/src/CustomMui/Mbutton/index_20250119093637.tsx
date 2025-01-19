@@ -3,8 +3,6 @@ import MButtonRoot from "./MButtonRoot";
 import PropTypes from "prop-types";
 import { SxProps } from "@mui/material";
 
-// test
-// 
 interface MButtonProps {
     common?: boolean;
     width?: string;

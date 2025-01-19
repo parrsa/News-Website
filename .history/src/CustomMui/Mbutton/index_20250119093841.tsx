@@ -5,7 +5,7 @@ import { SxProps } from "@mui/material";
 
 // test
 // 
-interface MButtonProps {
+// interface MButtonProps {
     common?: boolean;
     width?: string;
     color?: "white" | "primary" | "secondary" | "info" | "success" | "warning" | "error" | "light" | "dark";
